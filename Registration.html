@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="FormStyle.css" />
+</head>
+<body>
+<div class="form-style-2">
+    
+    <div class="form-style-2-heading">Enter Details</div>
+    
+    <form action="Registration.php" method="POST">
+    
+    <label for="field1">
+    	<span>Name</span>
+    	<input type="text" class="input-field" name="Name" required value=""/>
+	</label>
+    
+    <label for="field2">
+    	<span>Email</span>
+    	<input type="email" class="input-field" name="Email" required value="" />
+    </label>
+
+    <label for="field2">
+    	<span>Password</span>
+    	 <input type="password"  name="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 5 or more characters" required>
+    </label>
+
+    <label for="field2">
+    	<span>Contact Number</span></span>
+    	<input type="text" name="ContactNumber" pattern="[7-9]{1}[0-9]{9}" title="Phone number starts with 7-9 and remaing 9 digits with 0-9">
+    </label>
+
+    <label for="field1">
+    	<span>Flat Number</span>
+    	<input type="text" class="input-field" name="FlatNumber" required value=""/>
+	</label>
+
+	<label for="field1">
+    	<span>Street</span>
+    	<input type="text" class="input-field" name="Street" required value=""/>
+	</label>
+
+	<label for="field4">
+		<span>City </span><select name="City" class="select-field">
+    	<option value="">Select City</option>
+    	<option value="Salt Lake City">Salt Lake City</option>
+   		<option value="Rajarhat">Rajarhat</option>
+    	<option value="NewTown">New Town</option>
+		<option value="Beliaghata">Beliaghata</option>
+		<option value="LakeTown">Lake Town</option>
+    </select></label>
+
+    <label for="field2">
+    	<span>Pincode</span></span>
+    	<input type="text" name="Pincode" pattern="[7]{1}[0-9]{5}" title="Pincode starts with 7 and remaing 5 digits with 0-9">
+    </label>
+
+    <label for="field4">
+		<span>Premium Memebership </span><select name="PremiumMemebership" class="select-field">
+    	<option value="">Select</option>
+    	<option value="1">Yes</option>
+   		<option value="0">No</option>
+    	
+    </select></label>
+
+
+
+
+
+    
+    
+
+    <label><span> </span><input type="submit" value="Submit" /></label>
+    </form>
+    </div>
+
+</body>
+</html>

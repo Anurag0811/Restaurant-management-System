@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="FormStyle.css" />
+</head>
+<body>
+<div class="form-style-2">
+    
+    <div class="form-style-2-heading">Enter Details</div>
+    
+    <form action="AddDA.php" method="POST">
+    
+    <label for="field1">
+    	<span>Name</span>
+    	<input type="text" class="input-field" name="Name" required value=""/>
+	</label>
+  
+    <label for="field2">
+    	<span>Contact Number</span>
+    	<input type="text" name="ContactNumber" pattern="[7-9]{1}[0-9]{9}" title="Phone number starts with 7-9 and remaing 9 digits with 0-9">
+    </label>
+
+    <label for="field4">
+        <span>Gender </span>
+        <select name="Gender" class="select-field">
+        <option value="">Select</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+        </select>
+    </label>
+
+    <label for="field1">
+        <span>Area Code</span>
+        <input type="text" class="input-field" name="AC" required value=""/>
+    </label>
+  
+
+    <label for="field1">
+        <span>Address</span>
+        <input type="text" class="input-field" name="Address" required value=""/>
+    </label>
+	
+
+    
+
+
+
+
+
+    
+    
+
+    <label><span> </span><input type="submit" value="Submit" /></label>
+    </form>
+    </div>
+
+</body>
+</html>
